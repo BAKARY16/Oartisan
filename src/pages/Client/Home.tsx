@@ -28,6 +28,9 @@ const Home: React.FC = () => {
   return (
     <div className="home-container">
       <div className="carousel">
+        <button className="carousel-button next" onClick={nextSlide}>
+          &#8250;
+        </button>
         <button className="carousel-button prev" onClick={prevSlide}>
           &#8249;
         </button>
@@ -35,9 +38,6 @@ const Home: React.FC = () => {
           className="carousel-images"
           style={{ backgroundImage: `url(${images[currentIndex]})` }}
         ></div>
-        <button className="carousel-button next" onClick={nextSlide}>
-          &#8250;
-        </button>
         <div className="carousel-indicators">
           {images.map((_, index) => (
             <span
@@ -70,7 +70,7 @@ const Home: React.FC = () => {
                       <span className="word">besoins </span>
                     </span>
                   </p>
-                  <div className="container top-230 display-desktop"data-v-8d4d8d3a="">
+                  <div className="container top-230 display-desktop" data-v-8d4d8d3a="">
                     <form action="/app/recherche/recherche.php" className="m-btn m-btn-theme2" data-v-8d4d8d3a="" method="GET">
                       <input
                         type="text"
@@ -88,9 +88,11 @@ const Home: React.FC = () => {
                   <div className="container top-230 display-mobile" data-v-8d4d8d3a="">
                     <button className="m-btn m-btn-theme2" data-v-8d4d8d3a="">
                       <div data-v-8d4d8d3a="">
-                        <span className="typed-text" data-v-8d4d8d3a=""></span>
-                        <span className="blinking-cursor" data-v-8d4d8d3a=""></span>
-                        <span className="cursor" data-v-8d4d8d3a=""></span>
+                        <input
+                          type="text"
+                          className="search-bar"
+                          placeholder="Recherchez ici..."
+                        />
                       </div>
                       <span className="icon" data-v-8d4d8d3a="">
                         <i className="fa-solid fa-magnifying-glass" data-v-8d4d8d3a="">
@@ -114,6 +116,12 @@ const Home: React.FC = () => {
 };
 
 /*<div className="carousel-overlay">
+<button className="carousel-button next" onClick={nextSlide}>
+          &#8250;
+        </button>
+<button className="carousel-button prev" onClick={prevSlide}>
+          &#8249;
+        </button>
 <h1 className="title">Bienvenue sur O'artisan</h1>
 <p>Explorez nos fonctionnalités et découvrez nos services.</p>
 <input

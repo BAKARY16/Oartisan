@@ -10,8 +10,8 @@ const Footer: React.FC = () => {
       {/* --- Zone 1 : Liens & Réseaux & Boutons d'applications */}
       <div className="footer-top">
       <div className="footer-links">
-          <a href="#" className="plus">Qui sommes-nous</a>
-          <a href="#" className="plus">Nous contacter</a>
+          <a href="#" className="plus">A propos</a>
+          <a href="#" className="plus">Contactez-nous</a>
           <a href="#" className="plus">Actualités</a>
         </div>
         <div className="footer-apps">

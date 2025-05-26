@@ -3,7 +3,8 @@
   color: #fff;
   text-align: center;
   padding: 1rem 0;
-  position: relative; /* Change de fixed à relative */
+  position: relative;
+  /* Change de fixed à relative */
   width: 100%;
   overflow: hidden;
 }
@@ -18,11 +19,23 @@
   flex-wrap: wrap;
 }
 
+@media screen and (max-width: 350px) {
+  .footer-links {
+    display: flex;
+    align-items: center;
+    row-gap: 30px;
+  }
+
+  .footer-top {
+    flex-wrap: nowrap;
+  }
+}
+
 .footer-links a {
   margin-right: 2rem;
   color: #fff;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 15px;
   cursor: pointer;
 }
 
@@ -206,7 +219,13 @@
       align-content: center;
       align-items: center;
       padding-right: 1.5rem;
-      align-self: center;/* centre le bloc social */
+      align-self: center;
+      /* centre le bloc social */
     }
   }
+
+  .artisan-text {
+    color: #fff;
+    text-align: center;
+}
 }

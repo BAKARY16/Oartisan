@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    overflow-x: hidden;
   }
   
   h1, h2 {
@@ -29,3 +30,24 @@ body {
   nav ul li a:hover {
     text-decoration: underline;
   }
+
+  /*##########################*/
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e5e5e5;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333333d3;
+    border-radius: 20rem;
+    ;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #000;
+}

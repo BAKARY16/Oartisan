@@ -65,10 +65,10 @@ const Navbar: React.FC = () => {
             <FaShoppingBag className="icon" /> Boutique
           </Link>
           <Link to="/about" className={`menu-link ${location.pathname === '/about' ? 'active' : ''}`}>
-            <FaBuilding className="icon" /> À propos
+            <FaBuilding className="icon" /> A propos
           </Link>
           <Link to="/contact" className={`menu-link ${location.pathname === '/contact' ? 'active' : ''}`}>
-            <FaPhoneAlt className="icon" /> Contact
+            <FaPhoneAlt className="icon" /> Contactez
           </Link>
         </nav>
 
@@ -129,10 +129,10 @@ const Navbar: React.FC = () => {
           <FaShoppingBag className="mr-2" /> Boutique
         </Link>
         <Link to="/about" className="menu-link" onClick={() => setIsMenuOpen(false)}>
-          <FaBuilding className="mr-2" /> À propos
+          <FaBuilding className="mr-2" /> A propos
         </Link>
         <Link to="/contact" className="menu-link" onClick={() => setIsMenuOpen(false)}>
-          <FaPhoneAlt className="mr-2" /> Contact
+          <FaPhoneAlt className="mr-2" /> Contactez-nous
         </Link>
         <Link to="/login" className="menu-link" onClick={() => setIsMenuOpen(false)}>
           <FaUser className="mr-2" /> Connexion / Inscription

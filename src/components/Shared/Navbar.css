@@ -5,18 +5,26 @@
 /* Polices globales */
 body {
   font-family: 'Inter', sans-serif;
-  margin-top: 4rem; /* Ajustez cette valeur en fonction de la hauteur de la barre de menu */
+  margin-top: 4rem;
+  /* Ajustez cette valeur en fonction de la hauteur de la barre de menu */
 }
 
 /* Barre de navigation principale */
 header {
-  position: fixed; /* Fixe la barre en haut de la page */
-  top: 0; /* Positionne la barre tout en haut */
-  left: 0; /* Aligne à gauche */
-  width: 100%; /* Prend toute la largeur de l'écran */
-  z-index: 1000; /* Assure que la barre est au-dessus des autres éléments */
-  background-color: #ffffff; /* Fond blanc */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre pour un effet visuel */
+  position: fixed;
+  /* Fixe la barre en haut de la page */
+  top: 0;
+  /* Positionne la barre tout en haut */
+  left: 0;
+  /* Aligne à gauche */
+  width: 100%;
+  /* Prend toute la largeur de l'écran */
+  z-index: 1000;
+  /* Assure que la barre est au-dessus des autres éléments */
+  background-color: #ffffff;
+  /* Fond blanc */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Ajoute une ombre pour un effet visuel */
 }
 
 /* Basic styling for the Navbar component */
@@ -40,23 +48,32 @@ header {
 
 /* Liens de la barre de navigation */
 .navbar-links a {
-  color: white; /* Couleur du texte */
-  text-decoration: none; /* Supprime le soulignement */
-  transition: color 0.3s ease; /* Ajoute une transition pour un effet fluide */
+  color: white;
+  /* Couleur du texte */
+  text-decoration: none;
+  /* Supprime le soulignement */
+  transition: color 0.3s ease;
+  /* Ajoute une transition pour un effet fluide */
 }
 
 .navbar-links a:hover {
-  color: #ff5100; /* Orange vif */
+  color: #ff5100;
+  /* Orange vif */
 }
 
 /* Barre de navigation principale */
 .navbar-container {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr; /* Trois colonnes : logo, menu principal, icônes */
-  grid-template-areas: "logo menu icons"; /* Organisation des zones */
-  align-items: center; /* Centre verticalement les éléments */
-  padding: 0.4rem 1.5rem; /* Padding par défaut */
-  height: 4rem; /* Hauteur par défaut */
+  grid-template-columns: 1fr 2fr 1fr;
+  /* Trois colonnes : logo, menu principal, icônes */
+  grid-template-areas: "logo menu icons";
+  /* Organisation des zones */
+  align-items: center;
+  /* Centre verticalement les éléments */
+  padding: 0.4rem 1.5rem;
+  /* Padding par défaut */
+  height: 4rem;
+  /* Hauteur par défaut */
   background-color: #fff;
 }
 
@@ -73,14 +90,17 @@ header {
   grid-area: icons;
   display: flex;
   justify-content: flex-end;
-  gap: 1.5; /* Espacement entre les icônes */
+  gap: 1.5;
+  /* Espacement entre les icônes */
 }
 
 /* Logo */
 .navbar-logo {
   grid-area: logo;
-  justify-self: flex-start; /* Aligne le logo complètement à gauche */
-  align-self: center; /* Centre verticalement */
+  justify-self: flex-start;
+  /* Aligne le logo complètement à gauche */
+  align-self: center;
+  /* Centre verticalement */
   width: 3.5rem;
   height: 3.5rem;
   object-fit: contain;
@@ -90,9 +110,12 @@ header {
 nav {
   grid-area: menu;
   display: flex;
-  justify-content: center; /* Centre le menu principal horizontalement */
-  align-items: center; /* Centre verticalement */
-  gap: 2rem; /* Espacement entre les liens du menu */
+  justify-content: center;
+  /* Centre le menu principal horizontalement */
+  align-items: center;
+  /* Centre verticalement */
+  gap: 2rem;
+  /* Espacement entre les liens du menu */
 }
 
 /* Conteneur principal */
@@ -125,7 +148,8 @@ nav {
 
 /* Bouton de recherche */
 .animated-input-button {
-  background-color: #f97316; /* Orange */
+  background-color: #f97316;
+  /* Orange */
   color: #ffffff;
   border: none;
   border-radius: 50%;
@@ -138,7 +162,8 @@ nav {
 }
 
 .animated-input-button:hover {
-  background-color: #ea580c; /* Orange foncé */
+  background-color: #ea580c;
+  /* Orange foncé */
 }
 
 /* Bande noire d'assistance */
@@ -167,14 +192,16 @@ nav {
 @media (max-width: 768px) {
   .navbar-container {
     display: flex;
-    justify-content: space-between; /* Espace entre le logo, les icônes et le menu */
+    justify-content: space-between;
+    /* Espace entre le logo, les icônes et le menu */
     align-items: center;
     padding: 0.3rem 1rem;
     height: 3.5rem;
   }
 
   nav {
-    display: none; /* Cache le menu principal sur mobile */
+    display: none;
+    /* Cache le menu principal sur mobile */
   }
 
   .navbar-logo {
@@ -198,11 +225,6 @@ nav {
     align-items: center;
   }
 
-  /* Masque l'icône d'inscription sous 768px */
-  .icons .hidden-on-mobile {
-    display: none;
-  }
-
   .bg-black span,
   .bg-black a {
     font-size: 0.75rem;
@@ -213,6 +235,13 @@ nav {
   }
 }
 
+/* Masque l'icône d'inscription sous 768px */
+@media (max-width: 920px) {
+  .icons .hidden-on-mobile {
+    display: none;
+  }
+}
+
 @media (max-width: 480px) {
   .navbar-container {
     padding: 0.2rem 0.5rem;
@@ -220,7 +249,7 @@ nav {
   }
 
   .icons {
-    gap: 0.3rem;
+    gap: 1.3rem;
   }
 
   .bg-black {
@@ -247,7 +276,8 @@ nav {
 }
 
 .text-orange-logo {
-  color: #333; /* Orange vif */
+  color: #333;
+  /* Orange vif */
 }
 
 .bg-green-500 {
@@ -358,15 +388,20 @@ nav {
   position: absolute;
   top: -0.25rem;
   right: -0.5rem;
-  background-color: #dc2626; /* Rouge vif */
+  background-color: #dc2626;
+  /* Rouge vif */
   color: white;
-  font-size: 0.75rem; /* text-xs */
-  width: 1rem; /* 16px */
-  height: 1rem; /* 16px */
+  font-size: 0.75rem;
+  /* text-xs */
+  width: 1rem;
+  /* 16px */
+  height: 1rem;
+  /* 16px */
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 9999px; /* rounded-full */
+  border-radius: 9999px;
+  /* rounded-full */
 }
 
 .absolute {
@@ -390,14 +425,18 @@ nav {
 }
 
 .border-orange-500 {
-  border-color: #ff5100; /* Orange vif */
+  border-color: #ff5100;
+  /* Orange vif */
 }
 
 .icons {
   display: flex;
-  justify-content: center; /* Centre les icônes horizontalement */
-  align-items: center; /* Centre les icônes verticalement */
-  gap: 1rem; /* Espacement entre les icônes */
+  justify-content: center;
+  /* Centre les icônes horizontalement */
+  align-items: center;
+  /* Centre les icônes verticalement */
+  gap: 1.3rem;
+  /* Espacement entre les icônes */
   /*padding: 0 2rem; /* Ajoute un espace à gauche et à droite */
 }
 
@@ -430,39 +469,54 @@ nav {
   }
 
   nav {
-    display: none; /* Cache le menu principal sur mobile */
+    display: none;
+    /* Cache le menu principal sur mobile */
   }
 
   .navbar-logo {
-    width: 2.5rem; /* Réduit la taille du logo */
+    width: 2.5rem;
+    /* Réduit la taille du logo */
     height: 2.5rem;
   }
 }
 
 /* Menu principal */
 .menu-link {
-  display: flex; /* Active le flexbox */
-  font-size: 0.89rem; /* Taille de police par défaut */
-  flex-direction: column; /* Positionne les éléments en colonne (icône au-dessus, texte en dessous) */
-  align-items: center; /* Centre les éléments horizontalement */
-  text-align: center; /* Centre le texte sous l'icône */
-  color: #4a4a4a; /* Couleur du texte */
-  text-decoration: none; /* Supprime le soulignement */
-  font-weight: 550; /* Poids de la police */
-  transition: color 0.3s ease; /* Transition fluide pour le survol */
+  display: flex;
+  /* Active le flexbox */
+  font-size: 0.89rem;
+  /* Taille de police par défaut */
+  flex-direction: column;
+  /* Positionne les éléments en colonne (icône au-dessus, texte en dessous) */
+  align-items: center;
+  /* Centre les éléments horizontalement */
+  text-align: center;
+  /* Centre le texte sous l'icône */
+  color: #4a4a4a;
+  /* Couleur du texte */
+  text-decoration: none;
+  /* Supprime le soulignement */
+  font-weight: 550;
+  /* Poids de la police */
+  transition: color 0.3s ease;
+  /* Transition fluide pour le survol */
 }
 
 .menu-link .icon {
-  font-size: 1.2rem; /* Taille des icônes */
-  margin-bottom: 0.5rem; /* Espace entre l'icône et le texte */
+  font-size: 1.2rem;
+  /* Taille des icônes */
+  margin-bottom: 0.5rem;
+  /* Espace entre l'icône et le texte */
 }
 
 .menu-link:hover {
-  color: #ff5100; /* Change la couleur au survol */
+  color: #ff5100;
+  /* Change la couleur au survol */
 }
 
 .menu-link.active {
-  color: #ff5100; /* Orange vif pour le menu actif */
+  color: #ff5100;
+  /* Orange vif pour le menu actif */
   font-weight: 700;
   position: relative;
 }
@@ -480,31 +534,38 @@ nav {
 
 /* Icônes utilisateur, panier et notifications */
 .material-icons-outlined {
-  font-size: 1.5rem; /* Taille des icônes */
-  color: #4a4a4a; /* Gris foncé */
+  font-size: 1.5rem;
+  /* Taille des icônes */
+  color: #4a4a4a;
+  /* Gris foncé */
   transition: color 0.3s ease;
 }
 
 .material-icons-outlined:hover {
-  color: #ff5100; /* Orange vif au survol */
+  color: #ff5100;
+  /* Orange vif au survol */
 }
 
 /* Icônes utilisateur, panier et notifications */
 .text-lg,
 .text-xl {
-  font-size: 1.3rem; /* Taille légèrement plus grande pour une meilleure visibilité */
-  color: #333; /* Gris foncé */
+  font-size: 1.3rem;
+  /* Taille légèrement plus grande pour une meilleure visibilité */
+  color: #333;
+  /* Gris foncé */
   transition: color 0.3s ease;
 }
 
 .text-lg:hover,
 .text-xl:hover {
-  color: #ff5100; /* Orange vif au survol */
+  color: #ff5100;
+  /* Orange vif au survol */
 }
 
 /* Espacement entre l'icône et le texte Connexion */
 .flex.items-center.gap-2 {
-  gap: 0.5rem; /* Augmente l'espacement entre l'icône et le texte */
+  gap: 0.5rem;
+  /* Augmente l'espacement entre l'icône et le texte */
 }
 
 /* Pastilles des notifications et du panier */
@@ -512,15 +573,18 @@ nav {
   position: absolute;
   top: -0.25rem;
   right: -0.5rem;
-  background-color: #dc2626; /* Rouge vif */
+  background-color: #dc2626;
+  /* Rouge vif */
   color: white;
-  font-size: 0.70rem; /* Taille du texte */
+  font-size: 0.70rem;
+  /* Taille du texte */
   width: 1.1rem;
   height: 1.1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 9999px; /* Cercle */
+  border-radius: 9999px;
+  /* Cercle */
 }
 
 /* Ajustement de l'espacement global */
@@ -546,13 +610,16 @@ button {
 
 /* Supprime le soulignement pour tous les liens */
 a {
-  text-decoration: none; /* Supprime le soulignement */
-  transition: color 0.3s ease; /* Ajoute une transition fluide */
+  text-decoration: none;
+  /* Supprime le soulignement */
+  transition: color 0.3s ease;
+  /* Ajoute une transition fluide */
 }
 
 /* Ajoute un effet de survol pour les liens */
 a:hover {
-  text-decoration: none; /* Assure qu'il n'y a pas de soulignement au survol */
+  text-decoration: none;
+  /* Assure qu'il n'y a pas de soulignement au survol */
 }
 
 /* Responsive styles */
@@ -575,112 +642,164 @@ a:hover {
   }
 
   .relative span {
-    font-size: 0.65rem; /* Réduit la taille de la pastille */
-    width: 0.75rem; /* Réduit la largeur de la pastille */
-    height: 0.75rem; /* Réduit la hauteur de la pastille */
+    font-size: 0.65rem;
+    /* Réduit la taille de la pastille */
+    width: 0.75rem;
+    /* Réduit la largeur de la pastille */
+    height: 0.75rem;
+    /* Réduit la hauteur de la pastille */
   }
 }
 
 
 @media (max-width: 768px) {
   .navbar-container {
-    grid-template-columns: 1fr 2fr 1fr; /* Trois colonnes égales */
-    grid-template-areas: "logo icons menu"; /* Organisation des zones */
-    align-items: center; /* Centre verticalement les éléments */
-    padding: 0.3rem 1rem; /* Réduit le padding */
-    height: 3.2rem; /* Ajuste la hauteur de la barre */
+    grid-template-columns: 1fr 2fr 1fr;
+    /* Trois colonnes égales */
+    grid-template-areas: "logo icons menu";
+    /* Organisation des zones */
+    align-items: center;
+    /* Centre verticalement les éléments */
+    padding: 0.3rem 1rem;
+    /* Réduit le padding */
+    height: 3.2rem;
+    /* Ajuste la hauteur de la barre */
   }
 
   nav {
-    display: none; /* Cache le menu principal sur mobile */
+    display: none;
+    /* Cache le menu principal sur mobile */
   }
 
   .navbar-logo {
-    grid-area: logo; /* Place le logo dans la zone "logo" */
-    justify-self: flex-start; /* Aligne le logo complètement à gauche */
-    align-self: center; /* Centre verticalement */
+    grid-area: logo;
+    /* Place le logo dans la zone "logo" */
+    justify-self: flex-start;
+    /* Aligne le logo complètement à gauche */
+    align-self: center;
+    /* Centre verticalement */
   }
 
   .icons {
-    grid-area: icons; /* Place les icônes dans la zone "icons" */
+    grid-area: icons;
+    /* Place les icônes dans la zone "icons" */
     display: flex;
-    flex-direction: row; /* Aligne les icônes horizontalement */
-    justify-content: center; /* Centre les icônes horizontalement */
-    align-items: center; /* Centre les icônes verticalement */
-    gap: 1.5rem; /* Espacement entre les icônes */
+    flex-direction: row;
+    /* Aligne les icônes horizontalement */
+    justify-content: center;
+    /* Centre les icônes horizontalement */
+    align-items: center;
+    /* Centre les icônes verticalement */
+    gap: 1.5rem;
+    /* Espacement entre les icônes */
   }
 
   .menu {
-    grid-area: menu; /* Place le menu hamburger dans la zone "menu" */
+    grid-area: menu;
+    /* Place le menu hamburger dans la zone "menu" */
     display: flex;
-    justify-content: flex-end; /* Aligne le menu hamburger complètement à droite */
-    align-items: center; /* Centre verticalement */
+    justify-content: flex-end;
+    /* Aligne le menu hamburger complètement à droite */
+    align-items: center;
+    /* Centre verticalement */
   }
 }
 
 @media (max-width: 480px) {
   .navbar-container {
-    grid-template-columns: 1fr 2fr 1fr; /* Trois colonnes égales */
-    grid-template-areas: "logo icons menu"; /* Maintient l'organisation */
-    align-items: center; /* Centre verticalement les éléments */
-    padding: 0.2rem 0.5rem; /* Réduit encore le padding */
-    height: 3.8rem; /* Ajuste encore la hauteur de la barre */
+    grid-template-columns: 1fr 2fr 1fr;
+    /* Trois colonnes égales */
+    grid-template-areas: "logo icons menu";
+    /* Maintient l'organisation */
+    align-items: center;
+    /* Centre verticalement les éléments */
+    padding: 0.2rem 0.5rem;
+    /* Réduit encore le padding */
+    height: 3.8rem;
+    /* Ajuste encore la hauteur de la barre */
   }
 
   .navbar-logo {
-    justify-self: flex-start; /* Aligne le logo complètement à gauche */
+    justify-self: flex-start;
+    /* Aligne le logo complètement à gauche */
   }
 
   .icons {
-    justify-content: center; /* Centre les icônes horizontalement */
-    flex-direction: row; /* Aligne les icônes horizontalement */
-    gap: 0.3rem; /* Réduit encore l'espacement entre les icônes */
+    justify-content: center;
+    /* Centre les icônes horizontalement */
+    flex-direction: row;
+    /* Aligne les icônes horizontalement */
+    gap: 0.3rem;
+    /* Réduit encore l'espacement entre les icônes */
   }
 
   .menu {
-    justify-content: flex-end; /* Aligne le menu hamburger complètement à droite */
+    justify-content: flex-end;
+    /* Aligne le menu hamburger complètement à droite */
   }
 }
 
 /* Menu mobile */
 .mobile-menu {
   /*position: absolute;*/
-  top: 0; /* Aligne le menu en haut */
-  left: 0; /* Aligne le menu à gauche */
+  top: 0;
+  /* Aligne le menu en haut */
+  left: 0;
+  /* Aligne le menu à gauche */
   /*width: 62%; /* Prend toute la largeur de l'écran 39*/
-  background-color: #ffffff; /* Fond blanc */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre pour un effet professionnel */
-  transform: translateY(-100%); /* Cache le menu par défaut */
-  transition: transform 0.3s ease-in-out; /* Animation fluide pour l'ouverture/fermeture */
+  background-color: #ffffff;
+  /* Fond blanc */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Ombre pour un effet professionnel */
+  transform: translateY(-100%);
+  /* Cache le menu par défaut */
+  transition: transform 0.3s ease-in-out;
+  /* Animation fluide pour l'ouverture/fermeture */
   /*z-index: 40; /* Assure que le menu est au-dessus des autres éléments */
-  display: none; /* Masque le menu par défaut */
-  height: 50rem; /* Hauteur par défaut */
-  margin-top: 0.5rem; /* Espace entre la barre de navigation et le menu */
+  display: none;
+  /* Masque le menu par défaut */
+  height: 50rem;
+  /* Hauteur par défaut */
+  margin-top: 0.5rem;
+  /* Espace entre la barre de navigation et le menu */
 }
 
 .mobile-menu.open {
-  display: flex; /* Affiche le menu lorsqu'il est ouvert */
-  flex-direction: column; /* Les liens sont empilés verticalement */
-  transform: translateY(0); /* Fait apparaître le menu */
+  display: flex;
+  /* Affiche le menu lorsqu'il est ouvert */
+  flex-direction: column;
+  /* Les liens sont empilés verticalement */
+  transform: translateY(0);
+  /* Fait apparaître le menu */
 }
 
 .mobile-menu a {
-  display: block; /* Chaque lien occupe une ligne entière */
-  padding: 1.4rem 1.2rem; /* Ajuste l'espacement autour des liens */
-  font-size: 1rem; /* Taille de police légèrement réduite */
-  color: #333333; /* Couleur du texte plus sombre */
-  text-decoration: none; /* Supprime le soulignement */
-  border-bottom: 1px solid #eaeaea; /* Ligne de séparation entre les liens */
-  transition: color 0.3s ease, background-color 0.3s ease; /* Animation fluide pour le survol */
+  display: block;
+  /* Chaque lien occupe une ligne entière */
+  padding: 1.4rem 1.2rem;
+  /* Ajuste l'espacement autour des liens */
+  font-size: 1rem;
+  /* Taille de police légèrement réduite */
+  color: #333333;
+  /* Couleur du texte plus sombre */
+  text-decoration: none;
+  /* Supprime le soulignement */
+  border-bottom: 1px solid #eaeaea;
+  /* Ligne de séparation entre les liens */
+  transition: color 0.3s ease, background-color 0.3s ease;
+  /* Animation fluide pour le survol */
 }
 
 .mobile-menu a:hover {
-  color: #ffffff; /* Change la couleur du texte au survol */
-  background-color: #ff5100; /* Ajoute un fond orange vif au survol */
+  color: #ffffff;
+  /* Change la couleur du texte au survol */
+  background-color: #ff5100;
+  /* Ajoute un fond orange vif au survol */
 }
 
 .mobile-menu a.active {
-  color: #ff5100; /* Couleur pour le lien actif */
+  color: #ff5100;
+  /* Couleur pour le lien actif */
   font-weight: 700;
   position: relative;
 }
@@ -698,12 +817,14 @@ a:hover {
 
 /* Menu hamburger */
 .menu-button {
-  display: none; /* Masque le bouton sur les grands écrans */
+  display: none;
+  /* Masque le bouton sur les grands écrans */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 920px) {
   .menu-button {
-    display: flex; /* Affiche le bouton sur les petits et moyens écrans */
+    display: flex;
+    /* Affiche le bouton sur les petits et moyens écrans */
     align-items: center;
     justify-content: center;
     background: none;
@@ -712,16 +833,19 @@ a:hover {
   }
 
   .mobile-menu {
-    display: none; /* Masque le menu par défaut */
+    display: none;
+    /* Masque le menu par défaut */
   }
 
   .mobile-menu.open {
-    display: flex; /* Affiche le menu lorsqu'il est ouvert */
+    display: flex;
+    /* Affiche le menu lorsqu'il est ouvert */
     /*align-items: center;*/
   }
 
   nav {
-    display: none; /* Cache le menu principal sur les petits écrans */
+    display: none;
+    /* Cache le menu principal sur les petits écrans */
   }
 }
 
@@ -738,6 +862,7 @@ a:hover {
   font-weight: 600;
   transition: background-color 0.3s ease;
 }
+
 .explore-n:hover {
   background-color: #ff5100;
 }
